@@ -14,7 +14,12 @@
  */
 
 // Your code goes here...
-
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > val1 && arr[i] < val2) return true;
+  }
+  return false;
+}
 
 
 /**
@@ -30,8 +35,18 @@
  * getValueWithConditionOne(40, 40) => 80;
  * getValueWithConditionOne(20, 30) => 100;
  */
-
-
+function getValueWithConditionOne(val1, val2) {
+  if (val1 === 40 && val2 === 40) return val1 + val2
+  return (val1 * 2) + (val2 * 2);
+}
+const getValueWithConditionTwo = (val1, val2) => {
+  if (val1 === 40 && val2 === 40) return val1 + val2
+  return (val1 * 2) + (val2 * 2);
+}
+const getValueWithConditionThree = function(val1, val2) {
+  if (val1 === 40 && val2 === 40) return val1 + val2
+  return (val1 * 2) + (val2 * 2);
+}
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
